@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psuedo Elements/Classes</title>
+    <style>
+        *{
+            line-height: 30px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 margin-bottom:3>Psuedo Classes (:)</h1>
+    <p>Psuedo Classes are keywords added unto a selector which specify a specific state of the selected element.
+        <br><h3>Below are a list of psuedo classes:</h3>
+        <h2>Element display state pseudo-classes</h2>
+These pseudo-classes enable the selection of elements based on their display states.
+<br>
+<b><u>:fullscreen</u></b>
+<br>Matches an element that is currently in fullscreen mode.
+</br>
+<b><u>:modal</u></b>
+<br>Matches an element that is in a state in which it excludes all interaction with elements outside it until the interaction has been dismissed.
+</br>
+<b><u>:picture-in-picture</u></b>
+<br>Matches an element that is currently in picture-in-picture mode.
+
+<h2>Input pseudo-classes</h2>
+<br>These pseudo-classes relate to form elements, and enable selecting elements based on HTML attributes and the state that the field is in before and after interaction.
+<br>
+<b><u>:autofill</u></b>
+<br>Matches when an &lt;input &gt; has been autofilled by the browser.
+<br>
+<b><u>:enabled</u></b>
+<br>Represents a user interface element that is in an enabled state.
+<br>
+<b><u>:disabled</u></b>
+<br>Represents a user interface element that is in a disabled state.
+<br>
+<b><u>:read-only</u></b>
+<br>Represents any element that cannot be changed by the user.
+<br>
+<b><u>:read-write</u></b>
+<br>Represents any element that is user-editable.
+<br>
+<b><u>:placeholder-shown</u></b>
+<br>Matches an input element that is displaying placeholder text. For example, it will match the placeholder attribute in the &lt;input&gt;and &lt;textarea&gt; elements.
+<br>
+<b><u>:default</u></b>
+<br>Matches one or more UI elements that are the default among a set of elements.
+<br>
+<b><u>:checked</u></b>
+<br>Matches when elements such as checkboxes and radio buttons are toggled on.
+<br>
+<b><u>:indeterminate</u></b>
+<br>Matches UI elements when they are in an indeterminate state.
+<br>
+<b><u>:blank</u></b>
+<br>Matches a user-input element which is empty, containing an empty string or other null input.
+<br>
+<b><u>:valid</u></b>
+<br>Matches an element with valid contents. For example, an input element with the type 'email' that contains a validly formed email address or an empty value if the control is not required.
+<br>
+<b><u>:invalid</u></b>
+<br>Matches an element with invalid contents. For example, an input element with type 'email' with a name entered.
+<br>
+<b><u>:in-range</u></b>
+<br>Applies to elements with range limitations. For example, a slider control when the selected value is in the allowed range.
+<br>
+<b><u>:out-of-range</u></b>
+<br>Applies to elements with range limitations. For example, a slider control when the selected value is outside the allowed range.
+<br>
+<b><u>:required</u></b>
+<br>Matches when a form element is required.
+<br>
+<b><u>:optional</u></b>
+<br>Matches when a form element is optional.
+<br>
+<b><u>:user-invalid</u></b>
+<br>Represents an element with incorrect input, but only when the user has interacted with it.
+
+<h2>Linguistic pseudo-classes</h2>
+<br>These pseudo-classes reflect the document language, and enable the selection of elements based on language or script direction.
+<br>
+<b><u>:dir()</u></b>
+<br>The directionality pseudo-class selects an element based on its directionality as determined by the document language.
+<br>
+<b><u>:lang()</u></b>
+<br>Select an element based on its content language.
+<br>
+<h2>Location pseudo-classes</h2><b><u></u></b>
+<br>These pseudo-classes relate to links, and to targeted elements within the current document.
+<br>
+<b><u>:any-link</u></b>
+<br>Matches an element if the element would match either :link or :visited.
+<br>
+<b><u>:link</u></b>
+<br>Matches links that have not yet been visited.
+<br>
+<b><u>:visited</u></b>
+<br>Matches links that have been visited.
+<br>
+<b><u>:local-link</u></b>
+<br>Matches links whose absolute URL is the same as the target URL. For example, anchor links to the same page.
+<br>
+<b><u>:target</u></b>
+<br>Matches the element which is the target of the document URL.
+<br>
+<b><u>:target-within</u></b>
+<br>Matches elements which are the target of the document URL, but also elements which have a descendant which is the target of the document URL.
+<br>
+<b><u>:scope</u></b>
+<br>Represents elements that are a reference point for selectors to match against.
+
+<h2>Resource state pseudo-classes</h2>
+<br>These pseudo-classes apply to media that is capable of being in a state where it would be described as playing, such as a video.
+<br>
+<b><u>:playing</u></b>
+<br>Represents a media element that is capable of playing when that element is playing.
+<br>
+<b><u>:paused</u></b>
+<br>Represents a media element that is capable of playing when that element is paused.
+<br>
+<h2>Time-dimensional pseudo-classes</h2><b><u></u></b>
+<br>These pseudo-classes apply when viewing something which has timing, such as a WebVTT caption track.
+<br>
+<b><u>:current</u></b>
+<br>Represents the element or ancestor of the element that is being displayed.
+<br>
+<b><u>:past</u></b>
+<br>Represents an element that occurs entirely before the :current element.
+<br>
+<b><u>:future</u></b>
+<br>Represents an element that occurs entirely after the :current element.
+<br>
+<h2>Tree-structural pseudo-classes</h2>
+<br>These pseudo-classes relate to the location of an element within the document tree.
+<br>
+<b><u>:root</u></b>
+<br>Represents an element that is the root of the document. In HTML this is usually the &lt;html&gt; element.
+<br>
+<b><u>:empty</u></b>
+<br>Represents an element with no children other than white-space characters.
+<br>
+<b><u>:nth-child</u></b>
+<br>Uses An+B notation to select elements from a list of sibling elements.
+<br>
+<b><u>:nth-last-child</u></b>
+<br>Uses An+B notation to select elements from a list of sibling elements, counting backwards from the end of the list.
+<br>
+<b><u>:first-child</u></b>
+<br>Matches an element that is the first of its siblings.
+<br>
+<b><u>:last-child</u></b>
+<br>Matches an element that is the last of its siblings.
+<br>
+<b><u>:only-child</u></b>
+<br>Matches an element that has no siblings. For example, a list item with no other list items in that list.
+<br>
+<b><u>:nth-of-type</u></b>
+<br>Uses An+B notation to select elements from a list of sibling elements that match a certain type from a list of sibling elements.
+<br>
+<b><u>:nth-last-of-type</u></b>
+<br>Uses An+B notation to select elements from a list of sibling elements that match a certain type from a list of sibling elements counting backwards from the end of the list.
+<br>
+<b><u>:first-of-type</u></b>
+<br>Matches an element that is the first of its siblings, and also matches a certain type selector.
+<br>
+<b><u>:last-of-type</u></b>
+<br>Matches an element that is the last of its siblings, and also matches a certain type selector.
+<br>
+<b><u>:only-of-type</u></b>
+<br>Matches an element that has no siblings of the chosen type selector.
+<br>
+<h2>User action pseudo-classes</h2>
+<br>These pseudo-classes require some interaction by the user in order for them to apply, such as holding a mouse pointer over an element.
+<br>
+<b><u>:hover</u></b>
+<br>Matches when a user designates an item with a pointing device, such as holding the mouse pointer over the item.
+<br>
+<b><u>:active</u></b>
+<br>Matches when an item is being activated by the user. For example, when the item is clicked on.
+<br>
+<b><u>:focus</u></b>
+<br>Matches when an element has focus.
+<br>
+<b><u>:focus-visible</u></b>
+<br>Matches when an element has focus and the user agent identifies that the element should be visibly focused.
+<br>
+<b><u>:focus-within</u></b>
+<br>Matches an element to which :focus applies, plus any element that has a descendant to which :focus applies.
+
+    </p>
+  </body>
+</html>

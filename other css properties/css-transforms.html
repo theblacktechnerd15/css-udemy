@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>Transforms</title>
+    <!--Styling-->
+    <style>
+      h2 {
+        margin: 20px auto;
+        padding: 20px 1px 20px 1px;
+        border: solid 2px black;
+        width: 230px;
+        text-align: center;
+        color: #f9844a;
+        font-family: "Roboto Mono", monospace;
+        font-weight: lighter;
+      }
+
+      h2:nth-of-type(1n) {
+        background-color: #ff006e;
+      }
+      h2:nth-of-type(2n) {
+        background-color: #ffb703;
+      }
+      h2:nth-of-type(3n) {
+        background-color: #e63946;
+      }
+      h2:nth-of-type(4n) {
+        background-color: #003049;
+      }
+
+      section h2:nth-of-type(1) {
+        transform: rotate(30deg);
+        transform-origin: bottom right;
+      }
+      section h2:nth-of-type(2) {
+        transform: rotate(30deg);
+        transform-origin: top right;
+      }
+      section h2:nth-of-type(3) {
+        transform: rotate(30deg);
+        transform-origin: bottom right;
+      }
+      section h2:nth-of-type(4) {
+        transform: rotate(30deg);
+        transform-origin: top right;
+      }
+      /* using margin: auto; in block elements centers the content. 
+
+transform property can rotate, scale or change the state of an element. 
+
+transform: rotate(25deg); | Rotates content by 25degrees and using 180deg flips content upsided down. (Uses deg,rad,grad,turn)
+
+transform-origin: bottom right; | Changes the transform point of origin starting at the bottom right of the elements content block.
+(uses: center, top left, 50px 50px, bottom right 60px)
+
+transform: scale(2); | upscales the element by 2. using values under 1 (0.9 etc) downscales the element. 
+Basic scaling uses (2 and 2 , 2)
+
+transalate():moves an element by the amount value inputted. (transalate(30px) moves element by 30px)
+transalate uses most measurements (px, ems, rems, % etc)
+Inputting 2 values into transalate changes the X and Y axis of the element.
+
+transform:skew(); |skews element. Uses(deg, rad etc.)*/
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>Transform me!</h2>
+      <h2>Transform me!</h2>
+      <h2>Transform me!</h2>
+      <h2>Transform me!</h2>
+    </section>
+    <section>
+      <h2>Transform me!</h2>
+      <h2>Transform me!</h2>
+      <h2>Transform me!</h2>
+      <h2>Transform me!</h2>
+    </section>
+  </body>
+</html>

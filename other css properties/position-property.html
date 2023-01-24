@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      section h2 {
+        margin: 2px;
+      }
+
+      #relative,
+      #absolute {
+        display: inline-block;
+        height: 400px;
+        width: 400px;
+        border: solid 1px black;
+        position: relative;
+      }
+
+      section div {
+        width: 100px;
+        height: 100px;
+        border: solid black 2px;
+        background-color: red;
+        margin: 10px;
+        display: inline-block;
+      }
+
+      .mid,
+      .box2-right {
+        background-color: green;
+      }
+
+      #relative .mid {
+        position: absolute;
+        left: 0px;
+        bottom: 35px;
+      }
+    </style>
+    <title>Position Property</title>
+  </head>
+  <body>
+    <h1>Position Property</h1>
+    <p>
+      The position property sets how an element is positioned in a document. The
+      <u>top</u>, <u>right</u>, <u>bottom</u> and <u>left</u> properties
+      determine the final locaiton of positioned elements.
+      <br />
+      <br /><b><u>Value</u></b
+      ><br />
+      1. <b>Static:</b> <br />The element is positioned according to the normal
+      flow of the document. (Default)
+      <br />
+      2. <b>Relative:</b> <br />An element with position: relative; is
+      positioned relative to its normal position. Setting the top, right,
+      bottom, and left properties of a relatively-positioned element will cause
+      it to be adjusted away from its normal position. Other content will not be
+      adjusted to fit into any gap left by the element.
+      <br />
+      3. <b>Absolute:</b><br />The element is removed from the normal document
+      flow, and no space is created for the element in the page layout. It is
+      positioned relative to its closest positioned ancestor, if any; otherwise,
+      it is placed relative to the initial containing block. Its final position
+      is determined by the values of top, right, bottom, and left.
+      <br />
+      4. <b>Fixed:</b><br />The element is removed from the normal document
+      flow, and no space is created for the element in the page layout. It is
+      positioned relative to the initial containing block established by the
+      viewport, except when one of its ancestors has a transform, perspective,
+      or filter property set to something other than none or the will-change
+      property is set to transform, in which case that ancestor behaves as the
+      containing block. (Note that there are browser inconsistencies with
+      perspective and filter contributing to containing block formation.) Its
+      final position is determined by the values of top, right, bottom, and
+      left.
+    </p>
+    <br />
+    <hr />
+    <h2>Relative</h2>
+    <section id="relative">
+      <div></div>
+      <div class="mid"></div>
+      <div></div>
+    </section>
+    <section id="absolute">
+      <div class="box2-left"></div>
+      <div class="box2-right"></div>
+    </section>
+  </body>
+</html>

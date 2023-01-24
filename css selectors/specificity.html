@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Cascade/Specificty</title>
+  </head>
+  <body>
+    <h1>The Cascade</h1>
+    <p>
+      The Order in which your styles are declared in and linked matters
+      <br />
+      <br />
+      h1{<br />
+      color:red;
+      <br />}
+      <br />
+      <br />
+      h1{<br />
+      color:purple; &lt;==== will be inputted into the browser instead of Red
+      <br />}
+    </p>
+    <h2>Specificty</h2>
+    <p>
+      How the browser decies which rules to apply when there is a conflict
+      <br />Its a measure of how specific a given selector is. The more specific
+      selector wins.
+      <br />
+      <br />
+      Everything(*) &gt; inline styling &gt; IDs (#) &gt; Classes &gt; Elements
+      <br />
+      <a href="https://specificity.keegan.st/" target="_blank">
+        <b><u>You can calculate your Specificty here</u></b></a
+      >
+    </p>
+  </body>
+</html>

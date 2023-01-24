@@ -1,0 +1,39 @@
+<!--Fancy Hover Button Excercise-->
+<head>
+  <link href='<link rel="preconnect" href="https://fonts.googleapis.com">' />
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #8a0000;
+    }
+
+    button {
+      padding: 1em 2em;
+      border: 2px solid;
+      background: none;
+      color: #ffba08;
+      font-size: 1em;
+      transition: border 0.2s, color 0.2s, box-shadow 0.2s, transform 0.25s;
+    }
+
+    button:hover {
+      color: #ffffff;
+      border-color: blue;
+      box-shadow: 0 0.2em 0.3em blue;
+      transform: translateY(-0.25em);
+      cursor: pointer;
+    }
+    /* box-shadow property
+Keywords: inset/none (inherit/initial/unset)
+Syntax(5): box-shadow: offset x|offset y|blur radius|spread radius|color;
+(3): offset x|offset y|color;
+(4): offset x|offset y|blur radius|color;
+*/
+  </style>
+</head>
+<body>
+  <button>Hover Me</button>
+</body>

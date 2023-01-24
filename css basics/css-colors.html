@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Colors</title>
+    <style>
+      .c {
+        color: yellowgreen;
+      }
+      .o1 {
+        color: red;
+      }
+      .l {
+        color: blueviolet;
+      }
+      .o2 {
+        color: orangered;
+      }
+      .r {
+        color: aqua;
+      }
+      .s {
+        color: yellow;
+      }
+      .heading {
+        background-color: grey;
+        text-align: center;
+        margin: 1.5px 40% 1.5px 40%;
+      }
+      .hex-0 {
+        background-color: white;
+      }
+      .hex-f {
+        background-color: black;
+        color: white;
+      }
+      .R{
+        color: red;
+      }
+      .G{
+        color:green;
+      }
+      .B{
+        color: Blue;
+      }
+    
+        .red-col{
+            background-color: #FF0000;
+        }
+        .purple-col{
+            background-color: #800080;
+        }
+        .green-col{
+            background-color: #008000;
+        }
+        .yellow-col{
+            background-color: #FFFF00;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>
+        CSS <span class="c">C</span><span class="o1">o</span
+        ><span class="l">l</span><span class="o2">o</span
+        ><span class="r">r</span><span class="s">s</span>
+      </h1>
+    </div>
+    <section>
+      <h2>There are <b>3</b> main types of color values in html.</h2>
+      <h3>1. Named Colors</h3>
+      <p>Using color names. This method is limited</p>
+      <h3>2. Hexadecimals</h3>
+      <p>
+        Uses a mixture of letters and numbers ranging from 0-F. Every 2 Number
+        Values represents RGB.
+        <br />
+        e.g: <span class="hex-0">#000000</span> and
+        <span class="hex-f">#FFFFFF</span>
+      </p>
+      <h3>3. <span class="R">R</span><span class="G">G</span><span class="B">B</span> </h3>
+        <span class="R">R</span><span class="G">G</span><span class="B">B</span> (Red, Green, Blue) has 3 color channels
+        each ranging from 0-255. 0 being the lightest and 255 being the darkest. <br>
+        e.g: color: rgb(255,255,255) BLACK
+      </p>
+    </section>
+    <hr>
+    <hr>
+    <section>
+        <br>
+    <table border="1px" cellpadding='4' cellspacing="2" width="300px">
+        <thead>
+            <tr>
+                <th colspan="4">Color Table</th>
+            </tr>
+        <th>Color</th>
+        <th>Name</th>
+        <th>Hexcode</th>
+        <th>RGB Code</th>
+    </thead>
+        <tbody>
+            <tr>
+                <td class="red-col"> </td>
+                <td>Red</td>
+                <td>#FF0000</td>
+                <td>rgb(255, 0, 0)</td>
+            </tr>
+            <tr>
+                <td class="purple-col"> </td>
+                <td>Purple</td>
+                <td>#800080</td>
+                <td>rgb(128, 0, 128)</td>
+            </tr>
+            <tr >
+                <td class="green-col"> </td>
+                <td>Green</td>
+                <td>#008000</td>
+                <td>rgb(0, 128, 0)</td>
+            </tr>
+            <tr>
+                <td class="yellow-col"> </td>
+                <td>Yellow</td>
+                <td>#FFFF00</td>
+                <td>rgb(255, 255, 0)</td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+  </body>
+</html>

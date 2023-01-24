@@ -1,0 +1,5 @@
+1.Flexbox Flexbox is a one dimensional layout method for laying out items in
+rows or columns (helps to create a flexible layout structure) 2.Its a recent
+addition to CSS. Included to address common layout frustrations. 3.WHY Flexbox?
+Flexbox allows us to distribute space dynamically across elements of an unknown
+size, hence the term "flex"

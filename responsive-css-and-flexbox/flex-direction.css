@@ -1,0 +1,29 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    text-align: center;
+    font-weight: 300;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    /*reminder margin auto centers the container*/
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+}
+#container div{
+    width: 200px;
+    height: 200px;
+}
+
+/* in flexbox there are 2 axis
+1. Main Axis - right to left
+2. Cross Axis - up to down
+
+Flex Direction - changes the main axis direction
+
+values: row, row-reverse, column, column-reverse */

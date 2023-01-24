@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        transition: 2s;
+        transition-timing-function: cubic-bezier (0.29, 1.01, 1, -0.68);
+      }
+      .box:hover {
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
+<!--Always good practice to single out the property that youre transitioning
+e.g: transition: background-color: 1s, width: 3s;
+
+transition is a shorthand property and can hold
+transition: (property)(transition time)(duration)
+transition-timing-function values = linear, ease in, ease out, cubic-bezier, steps etc,
+-->
